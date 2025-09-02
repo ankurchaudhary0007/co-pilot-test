@@ -7,3 +7,11 @@ b = 3
 c = a + b
 
 print("final result - ", c)
+
+
+print("Testing with more stuff")
+
+
+d = math.sqrt(c)
+print("Square root of final result - ", d)
+
