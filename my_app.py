@@ -8,6 +8,8 @@ c = a + b
 
 print("final result - ", c)
 
+print("final result - ", d)
+
 
 print("Testing with more stuff")
 
