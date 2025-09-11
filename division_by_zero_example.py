@@ -13,4 +13,7 @@ print(calculate_ratio(5, 0))    # Raises ZeroDivisionError
 
 # Another example with a list of denominators
 for denom in [3, 2, 1, 0, -1]:
-    print(f"10 / {denom} = {calculate_ratio(10, denom)}")
+    try:
+        print(f"10 / {denom} = {calculate_ratio(10, denom)}")
+    except ValueError as e:
+        print(f"10 / {denom} = Error: {e}")
