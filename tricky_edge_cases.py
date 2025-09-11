@@ -15,7 +15,7 @@ def find_median(numbers):
         return (sorted_nums[mid - 1] + sorted_nums[mid]) / 2
     else:
         # Bug 3: Off-by-one error for odd length
-        return sorted_nums[mid + 1]
+        return sorted_nums[mid]
 
 # Example usages
 print(find_median([]))            # None (empty list)
