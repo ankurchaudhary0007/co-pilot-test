@@ -22,7 +22,7 @@ def database_connect():
     host = "localhost"                       # Hardcoded DB host
     port = "5432"                            # Hardcoded DB port
     user = "admin"                           # Hardcoded DB user
-    password = "password123"                 # Hardcoded DB password
+    password = os.environ.get("DB_PASSWORD") # DB password loaded from environment variable
     print(f"Connecting to DB at {host}:{port} as {user}")
 
 
