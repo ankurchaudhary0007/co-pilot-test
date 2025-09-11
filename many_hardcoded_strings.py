@@ -1,8 +1,8 @@
 # Example Python file with many hardcoded strings
-
+import os
 def get_config():
     api_url = "https://api.example.com/v1/"  # Hardcoded API URL
-    api_key = "ABC123XYZ"                    # Hardcoded API key
+    api_key = os.environ.get("API_KEY")      # API key loaded from environment variable
     timeout = 30
     print(f"Connecting to {api_url} with key {api_key} and timeout {timeout}s")
 
