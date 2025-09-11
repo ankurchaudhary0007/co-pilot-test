@@ -12,7 +12,7 @@ def find_median(numbers):
     mid = n // 2
     if n % 2 == 0:
         # Bug 2: Incorrect median calculation for even length
-        return (sorted_nums[mid] + sorted_nums[mid + 1]) / 2
+        return (sorted_nums[mid - 1] + sorted_nums[mid]) / 2
     else:
         # Bug 3: Off-by-one error for odd length
         return sorted_nums[mid + 1]
