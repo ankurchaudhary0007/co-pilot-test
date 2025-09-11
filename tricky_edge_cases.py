@@ -5,7 +5,8 @@ def find_median(numbers):
     Returns the median value of a list of numbers.
     Handles edge cases: empty list, single element, even/odd length.
     """
-    # Bug 1: Remove empty list check
+    if not numbers:
+        return None
     sorted_nums = sorted(numbers)
     n = len(sorted_nums)
     mid = n // 2
