@@ -9,7 +9,7 @@ def calculate_ratio(a, b):
 
 # Example usages
 print(calculate_ratio(10, 2))   # Output: 5.0
-print(calculate_ratio(5, 0))    # Raises ZeroDivisionError
+print(calculate_ratio(5, 0))    # Raises ValueError
 
 # Another example with a list of denominators
 for denom in [3, 2, 1, 0, -1]:
